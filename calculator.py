@@ -2,9 +2,12 @@
 This is my calculator.
 """
 
-def add(x=0, y=0):
+def add(*args):
     """Addition function."""
-    return x + y
+    total = 0
+    for i in args:
+        total += i
+    return total
 
 def substract(x: int, y: int) -> int:
     """Substraction function."""

@@ -2,7 +2,7 @@
 This is my calculator.
 """
 
-def add(x: int, y: int) -> int:
+def add(x=0, y=0):
     """Addition function."""
     return x + y
 

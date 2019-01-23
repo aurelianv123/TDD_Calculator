@@ -21,3 +21,7 @@ def test_substraction():
     Tests that the substraction function works.
     """
     assert substract(10, 2) == 8
+
+def test_no_params():
+    """If no params are provided return 0"""
+    assert add() == 0

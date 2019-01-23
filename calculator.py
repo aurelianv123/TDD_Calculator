@@ -8,4 +8,4 @@ def add(x: int, y: int) -> int:
 
 def substract(x: int, y: int) -> int:
     """Substraction function."""
-    return 8
+    return x - y

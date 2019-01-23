@@ -8,7 +8,7 @@ def add(*args):
     for i in args:
         total += i
     return total"""
-    return sum(args)
+    return float(sum(args))
 
 def substract(x: int, y: int) -> int:
     """Substraction function."""

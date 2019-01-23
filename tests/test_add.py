@@ -1,7 +1,7 @@
 """
 Test the add() function of my calculator.
 """
-
+import pytest
 from calculator import add, substract
 
 def test_addition():
@@ -33,3 +33,8 @@ def test_one_two_three():
 def test_negative_values():
     """ Given values -5 and -10, the result is -15 """
     assert add(-5, -10) == -15
+
+def test_dec_values():
+    """ Check that 0.1 + 0.1 + 0.1 equals 0.3"""
+    #assert round(add(0.1, 0.1, 0.1), 2) == round(0.3, 2)
+    assert add(0.1, 0.1, 0.1) == pytest.approx(0.3)
